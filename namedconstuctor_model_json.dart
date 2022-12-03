@@ -50,7 +50,7 @@ main() async {
   
   //pakai forEach juga bisa
   (predictions as List).map((e) {
-    var x = PlacePrediction.fromJson(e);
+    PlacePrediction.fromJson(e);
   }).toList();
 }
 
