@@ -8,6 +8,16 @@ main() async {
       "place_id": "ChIJN1t_tDeuEmsRUsoyG83frY4"
     }
   };
+  
+  //bikin object
+  PlaceDetail pd = PlaceDetail.fromJson(placeDetailsJson);
+  
+  //cara pakai 1 dengan class
+  print(pd.result!.geometry!.location!.lat);
+  
+  //cara pakai 2
+  print((placeDetailsJson['result'] as Map)['geometry']['location']['lat']);
+
 }
 
 class PlaceDetail {
